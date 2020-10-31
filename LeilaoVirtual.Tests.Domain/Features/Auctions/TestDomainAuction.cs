@@ -29,10 +29,12 @@ namespace LeilaoVirtual.Tests.Domain.Features.Auctions
             _auction.MakeMove(MoveObjectMother.Default2);
             _auction.MakeMove(MoveObjectMother.Default3);
 
+            var biggerMove = _auction.GetBiggerMove();
+
             //Validation
-            _auction.BiggerMove.MoveValue.Should().Be(MoveObjectMother.Default3.MoveValue);
-            _auction.BiggerMove.Person.Name.Should().Be(MoveObjectMother.Default3.Person.Name);
-            _auction.BiggerMove.Person.Age.Should().Be(MoveObjectMother.Default3.Person.Age);
+            biggerMove.MoveValue.Should().Be(MoveObjectMother.Default3.MoveValue);
+            biggerMove.Person.Name.Should().Be(MoveObjectMother.Default3.Person.Name);
+            biggerMove.Person.Age.Should().Be(MoveObjectMother.Default3.Person.Age);
 
         }
 
@@ -46,12 +48,14 @@ namespace LeilaoVirtual.Tests.Domain.Features.Auctions
 
             _auction.MakeMove(MoveObjectMother.Default2);
             Action act = () => _auction.MakeMove(MoveObjectMother.Default);
+            var biggerMove = _auction.GetBiggerMove();
+
 
             //Validation
             act.Should().Throw<InvalidMoveException>();
-            _auction.BiggerMove.MoveValue.Should().Be(MoveObjectMother.Default2.MoveValue);
-            _auction.BiggerMove.Person.Name.Should().Be(MoveObjectMother.Default2.Person.Name);
-            _auction.BiggerMove.Person.Age.Should().Be(MoveObjectMother.Default2.Person.Age);
+            biggerMove.MoveValue.Should().Be(MoveObjectMother.Default2.MoveValue);
+            biggerMove.Person.Name.Should().Be(MoveObjectMother.Default2.Person.Name);
+            biggerMove.Person.Age.Should().Be(MoveObjectMother.Default2.Person.Age);
 
         }
     }

@@ -13,10 +13,22 @@ namespace LeilaoVirtual.Domain.Features.Auctions
     public class Auction : Entity
     {
         public string Name { get; set; }
-        public IList<Move> Moves { get; internal set; }
+        public IList<Move> Moves { get;  set; }
 
-        public Move BiggerMove { get; internal set; }
         public Product Product { get; set; }
+
+
+        public Move GetBiggerMove()
+        {
+            Move move = new Move();
+            foreach (var item in Moves)
+            {
+                if (item.MoveValue > move.MoveValue)
+                    move = item;
+            }
+            return move;
+        }
+
 
         public bool MakeMove(Move move)
         {
@@ -35,10 +47,6 @@ namespace LeilaoVirtual.Domain.Features.Auctions
                 Moves.Add(move);
             }
 
-
-
-
-            BiggerMove = move;
 
             return true;
 
