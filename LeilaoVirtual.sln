@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{47B3BEE2-1603-4D2C-BAE5-6AC4D0B4099F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Service", "2 - Service", "{D53F7BC1-516C-400D-98CA-3ED4E93990D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{2BC5B7E3-4907-466A-B045-D1C6E67593A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{AB3ADB00-0A3F-40B1-8F47-10E0A1D3B45F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{A0A2F3C5-53C9-466E-AE68-5430BE0982D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoVirtual.Presentation", "LeilaoVirtual.Presentation\LeilaoVirtual.Presentation.csproj", "{64F21B84-FC78-4670-A488-48226F809BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoVirtual.Service", "LeilaoVirtual.Service\LeilaoVirtual.Service.csproj", "{9EBCA9DD-B66E-467C-ADDB-231E212C2528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoVirtual.Domain", "LeilaoVirtual.Domain\LeilaoVirtual.Domain.csproj", "{9A41FE37-39B5-4A40-91B6-0EC77D5C33EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoVirtual.Infra.Data", "LeilaoVirtual.Infra.Data\LeilaoVirtual.Infra.Data.csproj", "{44CB4C1F-42B7-4018-A99A-8CFF21C0131A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoVirtual.Tests.Service", "LeilaoVirtual.Tests.Service\LeilaoVirtual.Tests.Service.csproj", "{3F05C31C-59BC-43B8-BC7E-4DB1FC3F9B29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoVirtual.Tests.Domain", "LeilaoVirtual.Tests.Domain\LeilaoVirtual.Tests.Domain.csproj", "{03BF6713-2E73-4E78-AB71-DE19DB6FDF3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoVirtual.Tests.Infra.Data", "LeilaoVirtual.Tests.Infra.Data\LeilaoVirtual.Tests.Infra.Data.csproj", "{39063C0F-9947-47DA-AD64-3E53E00F4E7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64F21B84-FC78-4670-A488-48226F809BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F21B84-FC78-4670-A488-48226F809BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F21B84-FC78-4670-A488-48226F809BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F21B84-FC78-4670-A488-48226F809BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EBCA9DD-B66E-467C-ADDB-231E212C2528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EBCA9DD-B66E-467C-ADDB-231E212C2528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EBCA9DD-B66E-467C-ADDB-231E212C2528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EBCA9DD-B66E-467C-ADDB-231E212C2528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A41FE37-39B5-4A40-91B6-0EC77D5C33EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A41FE37-39B5-4A40-91B6-0EC77D5C33EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A41FE37-39B5-4A40-91B6-0EC77D5C33EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A41FE37-39B5-4A40-91B6-0EC77D5C33EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44CB4C1F-42B7-4018-A99A-8CFF21C0131A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44CB4C1F-42B7-4018-A99A-8CFF21C0131A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44CB4C1F-42B7-4018-A99A-8CFF21C0131A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44CB4C1F-42B7-4018-A99A-8CFF21C0131A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F05C31C-59BC-43B8-BC7E-4DB1FC3F9B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F05C31C-59BC-43B8-BC7E-4DB1FC3F9B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F05C31C-59BC-43B8-BC7E-4DB1FC3F9B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F05C31C-59BC-43B8-BC7E-4DB1FC3F9B29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03BF6713-2E73-4E78-AB71-DE19DB6FDF3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03BF6713-2E73-4E78-AB71-DE19DB6FDF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03BF6713-2E73-4E78-AB71-DE19DB6FDF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03BF6713-2E73-4E78-AB71-DE19DB6FDF3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39063C0F-9947-47DA-AD64-3E53E00F4E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39063C0F-9947-47DA-AD64-3E53E00F4E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39063C0F-9947-47DA-AD64-3E53E00F4E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39063C0F-9947-47DA-AD64-3E53E00F4E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64F21B84-FC78-4670-A488-48226F809BE9} = {47B3BEE2-1603-4D2C-BAE5-6AC4D0B4099F}
+		{9EBCA9DD-B66E-467C-ADDB-231E212C2528} = {D53F7BC1-516C-400D-98CA-3ED4E93990D4}
+		{9A41FE37-39B5-4A40-91B6-0EC77D5C33EC} = {2BC5B7E3-4907-466A-B045-D1C6E67593A8}
+		{44CB4C1F-42B7-4018-A99A-8CFF21C0131A} = {AB3ADB00-0A3F-40B1-8F47-10E0A1D3B45F}
+		{3F05C31C-59BC-43B8-BC7E-4DB1FC3F9B29} = {A0A2F3C5-53C9-466E-AE68-5430BE0982D3}
+		{03BF6713-2E73-4E78-AB71-DE19DB6FDF3A} = {A0A2F3C5-53C9-466E-AE68-5430BE0982D3}
+		{39063C0F-9947-47DA-AD64-3E53E00F4E7F} = {A0A2F3C5-53C9-466E-AE68-5430BE0982D3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EAC32F3-134A-44C6-99FF-5ABCF30B0B6C}
+	EndGlobalSection
+EndGlobal
