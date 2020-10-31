@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoVirtual.Tests.Domain"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoVirtual.Tests.Infra.Data", "LeilaoVirtual.Tests.Infra.Data\LeilaoVirtual.Tests.Infra.Data.csproj", "{39063C0F-9947-47DA-AD64-3E53E00F4E7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeilaoVirtual.Tests.Base", "LeilaoVirtual.Tests.Base\LeilaoVirtual.Tests.Base.csproj", "{D6FBCFE0-8B1E-4DCE-916B-1DF98F537744}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{39063C0F-9947-47DA-AD64-3E53E00F4E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39063C0F-9947-47DA-AD64-3E53E00F4E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39063C0F-9947-47DA-AD64-3E53E00F4E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6FBCFE0-8B1E-4DCE-916B-1DF98F537744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FBCFE0-8B1E-4DCE-916B-1DF98F537744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FBCFE0-8B1E-4DCE-916B-1DF98F537744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FBCFE0-8B1E-4DCE-916B-1DF98F537744}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{3F05C31C-59BC-43B8-BC7E-4DB1FC3F9B29} = {A0A2F3C5-53C9-466E-AE68-5430BE0982D3}
 		{03BF6713-2E73-4E78-AB71-DE19DB6FDF3A} = {A0A2F3C5-53C9-466E-AE68-5430BE0982D3}
 		{39063C0F-9947-47DA-AD64-3E53E00F4E7F} = {A0A2F3C5-53C9-466E-AE68-5430BE0982D3}
+		{D6FBCFE0-8B1E-4DCE-916B-1DF98F537744} = {A0A2F3C5-53C9-466E-AE68-5430BE0982D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EAC32F3-134A-44C6-99FF-5ABCF30B0B6C}

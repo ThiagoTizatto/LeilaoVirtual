@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LeilaoVirtual.Tests.Base\LeilaoVirtual.Tests.Base.csproj" />
+    <ProjectReference Include="..\LeilaoVirtual.Domain\LeilaoVirtual.Domain.csproj" />
   </ItemGroup>
 
 </Project>
