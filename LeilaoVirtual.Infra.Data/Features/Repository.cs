@@ -26,17 +26,17 @@ namespace LeilaoVirtual.Infra.Data.Features
             return DbSet.AsNoTracking().Where(predicate).ToList();
         }
 
-        public virtual TEntity ObterPorId(Guid id)
+        public virtual TEntity GetById(Guid id)
         {
             return DbSet.Find(id);
         }
 
-        public virtual  IList<TEntity> ObterTodos()
+        public virtual  IList<TEntity> GetAll()
         {
             return DbSet.ToList();
         }
 
-        public virtual TEntity  Adicionar(TEntity entity)
+        public virtual TEntity  Add(TEntity entity)
         {
             DbSet.Add(entity);
 
@@ -45,14 +45,14 @@ namespace LeilaoVirtual.Infra.Data.Features
             return entity;
         }
 
-        public virtual void Atualizar(TEntity entity)
+        public virtual void Update(TEntity entity)
         {
             DbSet.Update(entity);
             Db.SaveChanges();
     
         }
 
-        public virtual void Remover(TEntity entity)
+        public virtual void Delete(TEntity entity)
         {
             DbSet.Remove(entity);
             Db.SaveChanges();

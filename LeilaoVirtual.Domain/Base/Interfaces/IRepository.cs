@@ -7,11 +7,11 @@ namespace LeilaoVirtual.Domain.Base.Interfaces
 {
     public interface IRepository<TEntity> : IDisposable where TEntity : Entity
     {
-        TEntity Adicionar(TEntity entity);
-        TEntity ObterPorId(Guid id);
-        IList<TEntity> ObterTodos();
-        void Atualizar(TEntity entity);
-        void Remover(TEntity entity);
+        TEntity Add(TEntity entity);
+        TEntity GetById(Guid id);
+        IList<TEntity> GetAll();
+        void Update(TEntity entity);
+        void Delete(TEntity entity);
 
     }
 }
