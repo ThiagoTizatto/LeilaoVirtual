@@ -25,7 +25,7 @@ namespace LeilaoVirtual.Service.Features.Auctions
             _repository.Update(entity);
         }
 
-        public Auction GetById(Guid id)
+        public Auction GetById(long id)
         {
             return _repository.GetById(id);
         }

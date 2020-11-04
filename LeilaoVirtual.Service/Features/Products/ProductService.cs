@@ -25,7 +25,7 @@ namespace LeilaoVirtual.Service.Features.Products
             _repository.Update(entity);
         }
 
-        public Product GetById(Guid id)
+        public Product GetById(long id)
         {
             return _repository.GetById(id);
         }

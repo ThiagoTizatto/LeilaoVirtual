@@ -25,7 +25,7 @@ namespace LeilaoVirtual.Service.Features.Persons
             _repository.Update(entity);
         }
 
-        public Person GetById(Guid id)
+        public Person GetById(long id)
         {
             return _repository.GetById(id);
         }

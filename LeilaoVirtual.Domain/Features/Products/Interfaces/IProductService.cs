@@ -7,7 +7,7 @@ namespace LeilaoVirtual.Domain.Features.Products.Interfaces
     public interface IProductService
     {
         Product Add(Product entity);
-        Product GetById(Guid id);
+        Product GetById(long id);
         IList<Product> GetAll();
         void Update(Product entity);
         void Delete(Product entity);

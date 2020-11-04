@@ -25,7 +25,7 @@ namespace LeilaoVirtual.Service.Features.Moves
             _repository.Update(entity);
         }
 
-        public Move GetById(Guid id)
+        public Move GetById(long id)
         {
             return _repository.GetById(id);
         }

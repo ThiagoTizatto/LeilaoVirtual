@@ -26,7 +26,7 @@ namespace LeilaoVirtual.Infra.Data.Features
             return DbSet.AsNoTracking().Where(predicate).ToList();
         }
 
-        public virtual TEntity GetById(Guid id)
+        public virtual TEntity GetById(long id)
         {
             return DbSet.Find(id);
         }

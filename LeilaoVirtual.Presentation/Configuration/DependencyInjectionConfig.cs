@@ -7,6 +7,7 @@ using LeilaoVirtual.Infra.Data.Features.Auctions;
 using LeilaoVirtual.Infra.Data.Features.Moves;
 using LeilaoVirtual.Infra.Data.Features.Persons;
 using LeilaoVirtual.Infra.Data.Features.Products;
+using LeilaoVirtual.Service.Features.Products;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LeilaoVirtual.Presentation.Configuration
@@ -15,11 +16,15 @@ namespace LeilaoVirtual.Presentation.Configuration
     {
         public static IServiceCollection ResolveDependencies(this IServiceCollection services)
         {
+
+
             services.AddScoped<LeilaoDbContext>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddScoped<IMoveRepository, MoveRepository>();
             services.AddScoped<IAuctionRepository, AuctionRepository>();
+
+            services.AddScoped<IProductService, ProductService>();
 
             return services;
         }
